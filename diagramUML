@@ -1,0 +1,6 @@
+[FIFORhymer]-^[DefaultRhymer]
+[HanoiRhymer]-^[DefaultRhymer]
+
+[IntLinkedList]<>-1[Node]
+
+[Node]0..1 prev-0..1 next[Node]

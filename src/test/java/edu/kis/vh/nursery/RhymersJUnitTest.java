@@ -3,6 +3,10 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ *  RhymersJUnitTest class
+ *  Tests list size, counting, etc.
+ */
 public class RhymersJUnitTest {
 
     DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();

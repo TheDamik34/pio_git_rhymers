@@ -4,41 +4,41 @@ package edu.kis.vh.nursery;
  *  Class which count Rhymer
  */
 public class DefaultCountingOutRhymer {
+    IntArrayStack stack;
 
-    private final int[] NUMBERS = new int[12];
+    public DefaultCountingOutRhymer(IntArrayStack stack) {
+        this.stack = stack;
+    }
 
-    private int total = -1;
+    public DefaultCountingOutRhymer() {
+        this.stack = new IntArrayStack();
+    }
 
     public void countIn(int in) {
-        if (!isFull())
-            getNUMBERS()[++total] = in;
+        stack.countIn(in);
     }
 
-    boolean callCheck() {
-        return total == -1;
+    public boolean callCheck() {
+        return stack.callCheck();
     }
 
-    boolean isFull() {
-        return total == 11;
+    public boolean isFull() {
+        return stack.isFull();
     }
 
-    int peekaboo() {
-        if (callCheck())
-            return -1;
-        return getNUMBERS()[total];
+    public int peekaboo() {
+        return stack.peekaboo();
     }
 
     public int countOut() {
-        if (callCheck())
-            return -1;
-        return getNUMBERS()[total--];
+        return stack.countOut();
     }
 
     public int getTotal() {
-        return total;
+        return stack.getTotal();
     }
 
     public int[] getNUMBERS() {
-        return NUMBERS;
+        return stack.getNUMBERS();
     }
 }

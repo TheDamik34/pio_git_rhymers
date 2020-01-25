@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery.list;
 
+import edu.kis.vh.nursery.list.Node;
+
 public class IntLinkedList {
 
     Node last;

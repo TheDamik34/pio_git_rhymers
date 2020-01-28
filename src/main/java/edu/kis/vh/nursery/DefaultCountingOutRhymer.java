@@ -39,10 +39,6 @@ public class DefaultCountingOutRhymer {
         return getNumbers()[actualIndex--];
     }
 
-    public int getActualIndex() {
-        return actualIndex;
-    }
-
     private int[] getNumbers() {
         return numbers;
     }
